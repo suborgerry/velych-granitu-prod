@@ -1,22 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>velych-granitu</title>
-  <script type="module" crossorigin src="./assets/index-zLhl_1sR.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BEjMiNYO.css" />
 </head>
 
 <body>
+  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+  <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
   <div class="bg-gray-900">
     <header class="bg-gray-900 index-z-0 top-0 z-50 relative">
       <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
           <a href="./index.html" class="-m-1.5 p-1.5">
             <span class="sr-only">Велич Граніту</span>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
+            <img src="./images/Logo_SVG_White.svg" alt=""
               class="h-8 w-auto" />
           </a>
         </div>
@@ -33,7 +35,7 @@
         <el-popover-group class="hidden lg:flex lg:gap-x-12">
           <div class="relative">
             <button popovertarget="desktop-menu-product"
-              class="flex items-center gap-x-1 text-sm/6 font-semibold text-white">
+              class="flex items-center gap-x-1 text-sm/6 font-semibold text-white cursor-pointer">
               Каталог
               <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
                 class="size-5 flex-none text-gray-500">
@@ -48,7 +50,7 @@
               <div class="p-4">
                 <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
                   <div class="flex-auto">
-                    <a href="./category.html" class="block font-semibold text-white">
+                    <a href="#" class="block font-semibold text-white">
                       Одинарні
                       <span class="absolute inset-0"></span>
                     </a>
@@ -56,7 +58,7 @@
                 </div>
                 <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
                   <div class="flex-auto">
-                    <a href="./category.html#double" class="block font-semibold text-white">
+                    <a href="#" class="block font-semibold text-white">
                       Подвійні
                       <span class="absolute inset-0"></span>
                     </a>
@@ -64,7 +66,7 @@
                 </div>
                 <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
                   <div class="flex-auto">
-                    <a href="./category.html#heroes" class="block font-semibold text-white">
+                    <a href="#" class="block font-semibold text-white">
                       Для Героїв
                       <span class="absolute inset-0"></span>
                     </a>
@@ -72,7 +74,7 @@
                 </div>
                 <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
                   <div class="flex-auto">
-                    <a href="./category.html#burial" class="block font-semibold text-white">
+                    <a href="#" class="block font-semibold text-white">
                       Під захоронення
                       <span class="absolute inset-0"></span>
                     </a>
@@ -82,13 +84,14 @@
             </el-popover>
           </div>
 
-          <a href="./categories.html" class="text-sm/6 font-semibold text-white">Наші Роботи</a>
+          <a href="./catergories.html" class="text-sm/6 font-semibold text-white">Наші Роботи</a>
+          <a href="./how_we_work.html" class="text-sm/6 font-semibold text-white">Як ми працюємо</a>
           <a href="./about_us.html" class="text-sm/6 font-semibold text-white">Про Нас</a>
           <a href="./delivery_payment.html" class="text-sm/6 font-semibold text-white">Доставка та Оплата</a>
           <a href="./blog.html" class="text-sm/6 font-semibold text-white">Блог</a>
         </el-popover-group>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="./contact.html" class="text-sm/6 font-semibold text-white">Замовити <span aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="text-sm/6 font-semibold text-white">Замовити <span aria-hidden="true">&rarr;</span></a>
         </div>
       </nav>
       <el-dialog>
@@ -99,7 +102,7 @@
               <div class="flex items-center justify-between">
                 <a href="./index.html" class="-m-1.5 p-1.5">
                   <span class="sr-only">Велич Граніту</span>
-                  <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
+                  <img src="./images/Logo_SVG_White.svg" alt=""
                     class="h-8 w-auto" />
                 </a>
                 <button type="button" command="close" commandfor="mobile-menu"
@@ -126,36 +129,36 @@
                         </svg>
                       </button>
                       <el-disclosure id="products" hidden class="mt-2 block space-y-2">
-                        <a href="./category.html"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Одинарні</a>
-                        <a href="./category.html#double"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Подвійні</a>
-                        <a href="./category.html#heroes"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Для
                           Героїв</a>
-                        <a href="./category.html#burial"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Під
                           захоронення</a>
-                        <a href="./category.html"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Індивідуальні</a>
-                        <a href="./category.html"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Мармурові</a>
-                        <a href="./category.html"
+                        <a href="#"
                           class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Гранітні</a>
                       </el-disclosure>
                     </div>
-                    <a href="./categories.html"
+                    <a href="#"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Наші
                       Роботи</a>
-                    <a href="./delivery_payment.html"
+                    <a href="#"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Доставка
                       та Оплата</a>
-                    <a href="./about_us.html"
+                    <a href="#"
                       class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Про
                       Нас</a>
                   </div>
                   <div class="py-6">
-                    <a href="./contact.html"
+                    <a href="#"
                       class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Замовити
                       пам’ятник</a>
                   </div>
@@ -173,7 +176,15 @@
           <ol role="list" class="flex items-center space-x-4">
             <li>
               <div class="flex items-center">
-                <a href="./category.html" class="mr-4 text-sm font-medium text-gray-900">Одинарні</a>
+                <a href="./index.html" class="mr-4 text-sm font-medium text-gray-900">Головна</a>
+                <svg viewBox="0 0 6 20" aria-hidden="true" class="h-5 w-auto text-gray-300">
+                  <path d="M4.878 4.34H3.551L.27 16.532h1.327l3.281-12.19z" fill="currentColor" />
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <a href="./category.html" class="mr-4 text-sm font-medium text-gray-900">Каталог</a>
                 <svg viewBox="0 0 6 20" aria-hidden="true" class="h-5 w-auto text-gray-300">
                   <path d="M4.878 4.34H3.551L.27 16.532h1.327l3.281-12.19z" fill="currentColor" />
                 </svg>
@@ -181,7 +192,7 @@
             </li>
 
             <li class="text-sm">
-              <a href="./product.html" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Пам’ятник</a>
+              <a href="./product.html" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Пам’ятник №П2</a>
             </li>
           </ol>
         </nav>
@@ -189,8 +200,14 @@
           <div class="lg:grid lg:auto-rows-min lg:grid-cols-12 lg:gap-x-8">
             <div class="lg:col-span-5 lg:col-start-8">
               <div class="flex justify-between">
-                <h1 class="text-xl font-medium text-gray-900">Пам’ятник</h1>
-                <p class="text-xl font-medium text-gray-900">₴30000</p>
+                <div>
+                  <h1 class="text-xl font-medium text-gray-900">Пам’ятник №П2</h1>
+                  <p class="mt-2 text-sm text-gray-500">Камінь: Visage Blue (фіолетовий), Габро Букінське (чорний)</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-sm font-medium text-gray-400 line-through">₴100 000</p>
+                  <p class="text-xl font-medium text-gray-900">від ₴90 000</p>
+                </div>
               </div>
               <!-- Reviews -->
               <!-- <div class="mt-4">
@@ -219,7 +236,7 @@
               </div>
               <div aria-hidden="true" class="ml-4 text-sm text-gray-300">·</div>
               <div class="ml-4 flex">
-                <a href="./about_us.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">See all 512 reviews</a>
+                <a href="#" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">See all 512 reviews</a>
               </div>
             </div>
           </div> -->
@@ -230,112 +247,111 @@
               <h2 class="sr-only">Images</h2>
 
               <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-3 lg:gap-8">
-                <img src="./images/123.jpg" alt="Back of women&#039;s Basic Tee in black."
+                <img src="./images/123.jpg" alt="Пам’ятник №П2, головний ракурс."
                   class="rounded-lg lg:col-span-2 lg:row-span-2" />
-                <img src="./images/1234.jpg" alt="Side profile of women&#039;s Basic Tee in black."
+                <img src="./images/1234.jpg" alt="Пам’ятник №П2, боковий ракурс."
                   class="hidden rounded-lg lg:block" />
-                <img src="./images/12345.jpg" alt="Front of women&#039;s Basic Tee in black."
+                <img src="./images/12345.jpg" alt="Пам’ятник №П2, деталі композиції."
                   class="hidden rounded-lg lg:block" />
               </div>
             </div>
 
             <div class="mt-8 lg:col-span-5">
               <form>
-                <!-- Color picker -->
+                <!-- Materials -->
                 <div>
-                  <h2 class="text-sm font-medium text-gray-900">Color</h2>
-
-                  <fieldset aria-label="Choose a color" class="mt-2">
-                    <div class="flex items-center gap-x-3">
-                      <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
-                        <input type="radio" name="color" value="black" checked aria-label="Black"
-                          class="size-8 appearance-none rounded-full bg-gray-900 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-900 focus-visible:outline-3 focus-visible:outline-offset-3" />
-                      </div>
-                      <div class="flex rounded-full outline -outline-offset-1 outline-black/10">
-                        <input type="radio" name="color" value="heather-grey" aria-label="Heather Grey"
-                          class="size-8 appearance-none rounded-full bg-gray-400 forced-color-adjust-none checked:outline-2 checked:outline-offset-2 checked:outline-gray-400 focus-visible:outline-3 focus-visible:outline-offset-3" />
-                      </div>
-                    </div>
-                  </fieldset>
-                </div>
-
-                <!-- Size picker -->
-                <div class="mt-8">
                   <div class="flex items-center justify-between">
-                    <h2 class="text-sm font-medium text-gray-900">Size</h2>
-                    <a href="./delivery_payment.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">See sizing chart</a>
+                    <h2 class="text-sm font-medium text-gray-900">Матеріали</h2>
+                    <a href="./category.html" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Переглянути каталог</a>
                   </div>
 
-                  <fieldset aria-label="Choose a size" class="mt-2">
-                    <div class="grid grid-cols-3 gap-3 sm:grid-cols-6">
-                      <label aria-label="XXS"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="xxs"
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span
-                          class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XXS</span>
-                      </label>
-                      <label aria-label="XS"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="xs"
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XS</span>
-                      </label>
-                      <label aria-label="S"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="s" checked
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">S</span>
-                      </label>
-                      <label aria-label="M"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="m"
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">M</span>
-                      </label>
-                      <label aria-label="L"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="l"
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">L</span>
-                      </label>
-                      <label aria-label="XL"
-                        class="group relative flex items-center justify-center rounded-md border border-gray-300 bg-white p-3 has-checked:border-indigo-600 has-checked:bg-indigo-600 has-focus-visible:outline-2 has-focus-visible:outline-offset-2 has-focus-visible:outline-indigo-600 has-disabled:border-gray-400 has-disabled:bg-gray-200 has-disabled:opacity-25">
-                        <input type="radio" name="size" value="xl" disabled
-                          class="absolute inset-0 appearance-none focus:outline-none disabled:cursor-not-allowed" />
-                        <span class="text-sm font-medium text-gray-900 uppercase group-has-checked:text-white">XL</span>
-                      </label>
+                  <fieldset aria-label="Choose a material" class="mt-4">
+                    <div class="flex flex-wrap items-start gap-4">
+                      <a href="./category.html" class="group block w-24 text-center">
+                        <img src="./images/k8 Vizage Blue  Індія.png" alt="Visage Blue"
+                          class="mx-auto size-16 rounded-full object-cover ring-1 ring-gray-200 transition group-hover:ring-indigo-500" />
+                        <span class="mt-2 block text-xs font-medium text-gray-900">Visage Blue</span>
+                      </a>
+                      <a href="./category.html" class="group block w-24 text-center">
+                        <img src="./images/k2 Габро Букінське  Україна.png" alt="Габро Букінське"
+                          class="mx-auto size-16 rounded-full object-cover ring-1 ring-gray-200 transition group-hover:ring-indigo-500" />
+                        <span class="mt-2 block text-xs font-medium text-gray-900">Габро Букінське</span>
+                      </a>
                     </div>
                   </fieldset>
                 </div>
 
-                <button type="submit"
-                  class="mt-8 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add
-                  to cart</button>
+                <!-- Product features -->
+                <div class="mt-8">
+                  <div class="flex items-center justify-between">
+                    <h2 class="text-sm font-medium text-gray-900">Особливості товару</h2>
+                    <a href="https://velych-granitu.lviv.ua/quiz" class="text-sm font-medium text-indigo-600 hover:text-indigo-500">Отримати прорахунок</a>
+                  </div>
+
+                  <div class="mt-4">
+                    <ul role="list" class="list-disc space-y-2 pl-5 text-sm/6 text-gray-500 marker:text-gray-300">
+                      <li class="pl-2">Власне виробництво з 1996 року</li>
+                      <li class="pl-2">Офіційна гарантія 10 років</li>
+                      <li class="pl-2">Встановлюємо по всій Україні</li>
+                      <li class="pl-2">Працюємо за офіційним договором</li>
+                      <li class="pl-2">Можлива індивідуальна розробка пам’ятника будь-якої складності</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <button type="button"
+                    class="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Add
+                    to Cart</button>
+                  <button type="button"
+                    class="flex w-full items-center justify-center rounded-md border border-indigo-600 bg-white px-8 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:outline-hidden">Order
+                    Now</button>
+                </div>
               </form>
+
+              <div class="mt-10 border-t border-gray-200 pt-8">
+                <dl class="space-y-4 text-sm/6 text-gray-500">
+                  <div class="flex items-start justify-between gap-4">
+                    <dt class="font-medium text-gray-900">SKU</dt>
+                    <dd>P2</dd>
+                  </div>
+                  <div class="flex items-start justify-between gap-4">
+                    <dt class="font-medium text-gray-900">Category</dt>
+                    <dd>Подвійні</dd>
+                  </div>
+                  <div class="flex items-start justify-between gap-4">
+                    <dt class="font-medium text-gray-900">Share</dt>
+                    <dd class="flex gap-3">
+                      <a href="#" class="hover:text-gray-900">Facebook</a>
+                      <a href="#" class="hover:text-gray-900">Instagram</a>
+                      <a href="#" class="hover:text-gray-900">Copy link</a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
 
               <!-- Product details -->
               <div class="mt-10">
-                <h2 class="text-sm font-medium text-gray-900">Description</h2>
+                <h2 class="text-sm font-medium text-gray-900">Product Description</h2>
 
                 <div class="mt-4 space-y-4 text-sm/6 text-gray-500">
-                  <p>The Basic tee is an honest new take on a classic. The tee uses super soft, pre-shrunk cotton for
-                    true comfort and a dependable fit. They are hand cut and sewn locally, with a special dye technique
-                    that gives each tee it's own look.</p>
-                  <p>Looking to stock your closet? The Basic tee also comes in a 3-pack or 5-pack at a bundle discount.
-                  </p>
+                  <p>Пам’ятник №П2 виконаний із каменю Visage Blue (фіолетовий) та Габро Букінське (чорний) і
+                    відповідає підходу компанії «Велич Граніту» до довговічних, надійних та естетичних пам’ятників.</p>
+                  <p>Наша гранітна майстерня пропонує великий вибір іноземного граніту та мармуру, а також можливість
+                    реалізувати проєкт пам’ятника будь-якої складності або замовити індивідуальну розробку.</p>
                 </div>
               </div>
 
               <div class="mt-8 border-t border-gray-200 pt-8">
-                <h2 class="text-sm font-medium text-gray-900">Fabric &amp; Care</h2>
+                <h2 class="text-sm font-medium text-gray-900">Specifications</h2>
 
                 <div class="mt-4">
                   <ul role="list" class="list-disc space-y-1 pl-5 text-sm/6 text-gray-500 marker:text-gray-300">
-                    <li class="pl-2">Only the best materials</li>
-                    <li class="pl-2">Ethically and locally made</li>
-                    <li class="pl-2">Pre-washed and pre-shrunk</li>
-                    <li class="pl-2">Machine wash cold with similar colors</li>
+                    <li class="pl-2">Тип: подвійний пам’ятник</li>
+                    <li class="pl-2">Матеріали: Visage Blue (фіолетовий), Габро Букінське (чорний)</li>
+                    <li class="pl-2">Встановлення: по всій Україні</li>
+                    <li class="pl-2">Гарантія: офіційна гарантія 10 років</li>
+                    <li class="pl-2">Виробництво: власне виробництво з 1996 року</li>
                   </ul>
                 </div>
               </div>
@@ -353,9 +369,10 @@
                           d="m6.115 5.19.319 1.913A6 6 0 0 0 8.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 0 0 2.288-4.042 1.087 1.087 0 0 0-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 0 1-.98-.314l-.295-.295a1.125 1.125 0 0 1 0-1.591l.13-.132a1.125 1.125 0 0 1 1.3-.21l.603.302a.809.809 0 0 0 1.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 0 0 1.528-1.732l.146-.292M6.115 5.19A9 9 0 1 0 17.18 4.64M6.115 5.19A8.965 8.965 0 0 1 12 3c1.929 0 3.716.607 5.18 1.64"
                           stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span class="mt-4 text-sm font-medium text-gray-900">International delivery</span>
+                      <span class="mt-4 text-sm font-medium text-gray-900">Офіційна гарантія 10 років</span>
                     </dt>
-                    <dd class="mt-1 text-sm text-gray-500">Get your order in 2 years</dd>
+                    <dd class="mt-1 text-sm text-gray-500">Працюємо за офіційним договором і надаємо письмову гарантію
+                      на виконані роботи.</dd>
                   </div>
                   <div class="rounded-lg border border-gray-200 bg-gray-50 p-6 text-center">
                     <dt>
@@ -365,9 +382,10 @@
                           d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                           stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
-                      <span class="mt-4 text-sm font-medium text-gray-900">Loyalty rewards</span>
+                      <span class="mt-4 text-sm font-medium text-gray-900">Встановлюємо по всій Україні</span>
                     </dt>
-                    <dd class="mt-1 text-sm text-gray-500">Don&#039;t look at other tees</dd>
+                    <dd class="mt-1 text-sm text-gray-500">Бетонування, встановлення та облагородження виконуємо за
+                      технологією, що допомагає зберігати пам’ятник без перекосів на довгі роки.</dd>
                   </div>
                 </dl>
               </section>
@@ -376,7 +394,7 @@
         </div>
       </div>
     </div>
-    <div class="relative isolate px-6 pt-14 lg:px-8" style="background-image: url('./images/Каталог1.png');">
+    <div class="relative isolate px-6 flex items-center lg:px-8 min-h-[90vh]" style="background-image: url('./images/Каталог1.png');">
 
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
 
@@ -394,14 +412,14 @@
           <div class="group relative">
             <div class="absolute top-2 left-2 bg-gray-200 rounded-sm">
               <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">
-                <path d="M19 5L5 19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 5L5 19" stroke="#0E1621" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 </path>
                 <path
                   d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10Z"
-                  stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  stroke="#0E1621" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                 <path
                   d="M17 20C18.6569 20 20 18.6569 20 17C20 15.3431 18.6569 14 17 14C15.3431 14 14 15.3431 14 17C14 18.6569 15.3431 20 17 20Z"
-                  stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  stroke="#0E1621" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </div>
             <img src="./images/123.jpg" alt="Пам’ять, повага та любов до близьких людей."
@@ -409,7 +427,7 @@
             <div class="mt-4 flex justify-between flex-col">
               <div>
                 <h3 class="text-sm text-gray-700">
-                  <a href="./category.html">
+                  <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     Одинарні
                   </a>
@@ -423,7 +441,7 @@
             <div class="mt-4 flex justify-between flex-col">
               <div>
                 <h3 class="text-sm text-gray-700">
-                  <a href="./category.html#double">
+                  <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     Подвійні
                   </a>
@@ -440,7 +458,7 @@
             <div class="mt-4 flex justify-between flex-col">
               <div>
                 <h3 class="text-sm text-gray-700">
-                  <a href="./category.html#heroes">
+                  <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     Для Героїв
                   </a>
@@ -454,7 +472,7 @@
             <div class="mt-4 flex justify-between flex-col">
               <div>
                 <h3 class="text-sm text-gray-700">
-                  <a href="./category.html#burial">
+                  <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     Під захоронення
                   </a>
@@ -469,15 +487,15 @@
       <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div class="xl:grid xl:grid-cols-4 xl:gap-8">
           <div class="space-y-8">
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Велич Граніту"
+            <img src="./images/Logo_SVG_White.svg" alt="Велич Граніту"
               class="h-9" />
             <p class="text-sm/6 text-balance text-gray-400">Якщо вас цікавлять пам’ятники Львів, найкраще рішення —
               звернутися до виробника.</p>
-            <a href="./contact.html"
+            <a href="#"
               class="inline-flex rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-gray-100">Submit
               a Request</a>
             <div class="flex gap-x-6">
-              <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Facebook</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                   <path
@@ -485,7 +503,7 @@
                     clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
               </a>
-              <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                   <path
@@ -493,14 +511,14 @@
                     clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
               </a>
-              <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">X</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                   <path
                     d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8131L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z" />
                 </svg>
               </a>
-              <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">GitHub</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                   <path
@@ -508,7 +526,7 @@
                     clip-rule="evenodd" fill-rule="evenodd" />
                 </svg>
               </a>
-              <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">YouTube</span>
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                   <path
@@ -524,13 +542,14 @@
                 <h3 class="text-sm/6 font-semibold text-white">Адреси</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <span class="text-sm/6 text-gray-400">Lviv, 10 Luhanska St. Ukraine</span>
+                    <span class="text-sm/6 text-gray-400">Львів, вул. Луганська, 10, Україна
+</span>
                   </li>
                   <li>
-                    <span class="text-sm/6 text-gray-400">Sambir, 13 Shevchenka St.</span>
+                    <span class="text-sm/6 text-gray-400">Самбір, вул. Шевченка, 13</span>
                   </li>
                   <li>
-                    <span class="text-sm/6 text-gray-400">Ivano-Frankivsk, 81 Petliury St.</span>
+                    <span class="text-sm/6 text-gray-400">Івано-Франківськ, вул. Петлюри, 81</span>
                   </li>
                 </ul>
               </div>
@@ -538,42 +557,44 @@
                 <h3 class="text-sm/6 font-semibold text-white">Каталог</h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li>
-                    <a href="./category.html" class="text-sm/6 text-gray-400 hover:text-gray-300">All Products</a>
+                    <a href="./category.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Всі Товари</a>
                   </li>
                   <li>
-                    <a href="./product.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Single</a>
+                    <a href="./product.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Одинарні</a>
                   </li>
                   <li>
-                    <a href="./category.html#double" class="text-sm/6 text-gray-400 hover:text-gray-300">Double</a>
+                    <a href="./category.html#Подвійні" class="text-sm/6 text-gray-400 hover:text-gray-300">Подвійні</a>
                   </li>
                   <li>
-                    <a href="./category.html#heroes" class="text-sm/6 text-gray-400 hover:text-gray-300">For Heroes</a>
+                    <a href="./category.html#heroes" class="text-sm/6 text-gray-400 hover:text-gray-300">Для Героїв</a>
                   </li>
                   <li>
-                    <a href="./category.html#burial" class="text-sm/6 text-gray-400 hover:text-gray-300">For Burial</a>
+                    <a href="./category.html#burial" class="text-sm/6 text-gray-400 hover:text-gray-300">Для поховання</a>
                   </li>
                 </ul>
               </div>
               <div>
                 <h3 class="text-sm/6 font-semibold text-white">Меню</h3>
-                <ul role="list" class="mt-6 space-y-4">
-                  <li>
-                    <a href="./production.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Production</a>
-                  </li>
-                  <li>
-                    <a href="./about_us.html" class="text-sm/6 text-gray-400 hover:text-gray-300">About Us</a>
-                  </li>
-                  <li>
-                    <a href="./blog.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Blog</a>
-                  </li>
-                  <li>
-                    <a href="./delivery_payment.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Payment &
-                      Delivery</a>
-                  </li>
-                  <li>
-                    <a href="./contact.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Contacts</a>
-                  </li>
-                </ul>
+                              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="./Виробництво.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Виробництво</a>
+                </li>
+                <li>
+                  <a href="./how_we_work.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Як ми працюємо</a>
+                </li>
+                <li>
+                  <a href="./about_us.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Про нас</a>
+                </li>
+                <li>
+                  <a href="./blog.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Блог</a>
+                </li>
+                <li>
+                  <a href="./delivery_payment.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Оплата та доставка</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Контакти</a>
+                </li>
+              </ul>
               </div>
             </div>
           </div>

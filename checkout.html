@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оформлення замовлення — Велич Граніту</title>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <div class="bg-gray-900">
+    <header class="relative z-50 bg-gray-900">
+      <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+          <a href="./index.html" class="-m-1.5 p-1.5">
+            <span class="sr-only">Велич Граніту</span>
+            <img src="./images/Logo_SVG_White.svg" alt="Велич Граніту" class="h-8 w-auto" />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+            <span class="sr-only">Відкрити меню</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+              class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <el-popover-group class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button popovertarget="desktop-menu-product"
+              class="flex cursor-pointer items-center gap-x-1 text-sm/6 font-semibold text-white">
+              Каталог
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="size-5 flex-none text-gray-500">
+                <path
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd" fill-rule="evenodd" />
+              </svg>
+            </button>
+
+            <el-popover id="desktop-menu-product" anchor="bottom" popover
+              class="w-screen max-w-md overflow-hidden rounded-3xl bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+              <div class="p-4">
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                  <div class="flex-auto">
+                    <a href="./category.html" class="block font-semibold text-white">
+                      Одинарні
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                  <div class="flex-auto">
+                    <a href="./category.html#Подвійні" class="block font-semibold text-white">
+                      Подвійні
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                  <div class="flex-auto">
+                    <a href="./category.html#heroes" class="block font-semibold text-white">
+                      Для Героїв
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                  <div class="flex-auto">
+                    <a href="./category.html#burial" class="block font-semibold text-white">
+                      Під захоронення
+                      <span class="absolute inset-0"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </el-popover>
+          </div>
+
+          <a href="./categories.html" class="text-sm/6 font-semibold text-white">Наші Роботи</a>
+          <a href="./how_we_work.html" class="text-sm/6 font-semibold text-white">Як ми працюємо</a>
+          <a href="./about_us.html" class="text-sm/6 font-semibold text-white">Про Нас</a>
+          <a href="./delivery_payment.html" class="text-sm/6 font-semibold text-white">Доставка та Оплата</a>
+          <a href="./blog.html" class="text-sm/6 font-semibold text-white">Блог</a>
+        </el-popover-group>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="./checkout.html" aria-current="page" class="text-sm/6 font-semibold text-white">Оформити
+            замовлення <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+
+      <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+          <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+              <div class="flex items-center justify-between">
+                <a href="./index.html" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Велич Граніту</span>
+                  <img src="./images/Logo_SVG_White.svg" alt="Велич Граніту" class="h-8 w-auto" />
+                </a>
+                <button type="button" command="close" commandfor="mobile-menu"
+                  class="-m-2.5 rounded-md p-2.5 text-gray-400">
+                  <span class="sr-only">Закрити меню</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"
+                    class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-white/10">
+                  <div class="space-y-2 py-6">
+                    <div class="-mx-3">
+                      <button type="button" command="--toggle" commandfor="products"
+                        class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
+                        Каталог
+                        <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+                          class="size-5 flex-none in-aria-expanded:rotate-180">
+                          <path
+                            d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                            clip-rule="evenodd" fill-rule="evenodd" />
+                        </svg>
+                      </button>
+                      <el-disclosure id="products" hidden class="mt-2 block space-y-2">
+                        <a href="./category.html"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Одинарні</a>
+                        <a href="./category.html#Подвійні"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Подвійні</a>
+                        <a href="./category.html#heroes"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Для
+                          Героїв</a>
+                        <a href="./category.html#burial"
+                          class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Під
+                          захоронення</a>
+                      </el-disclosure>
+                    </div>
+                    <a href="./categories.html"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Наші
+                      Роботи</a>
+                    <a href="./delivery_payment.html"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Доставка
+                      та Оплата</a>
+                    <a href="./about_us.html"
+                      class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Про
+                      Нас</a>
+                  </div>
+                  <div class="py-6">
+                    <a href="./checkout.html"
+                      class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Оформити
+                      замовлення</a>
+                  </div>
+                </div>
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </header>
+  </div>
+
+  <main id="checkout-page" class="py-10 sm:py-14">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <nav aria-label="Breadcrumb" class="mb-8">
+        <ol role="list" class="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+          <li><a href="./index.html" class="font-medium text-gray-700 transition hover:text-gray-900">Головна</a></li>
+          <li class="text-gray-400">/</li>
+          <li><a href="./product.html" class="font-medium text-gray-700 transition hover:text-gray-900">Товар</a></li>
+          <li class="text-gray-400">/</li>
+          <li class="font-medium text-gray-500" aria-current="page">Оформлення замовлення</li>
+        </ol>
+      </nav>
+
+      <section class="overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-gray-200">
+        <div class="border-b border-gray-200 bg-linear-to-r from-gray-900 to-gray-800 px-6 py-10 sm:px-10">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold tracking-[0.2em] text-gray-400 uppercase">Checkout</p>
+            <h1 class="mt-4 text-3xl font-semibold text-white sm:text-5xl">Стандартний кошик</h1>
+            <p class="mt-4 max-w-2xl text-base text-gray-300 sm:text-lg">
+              Залиште контакти, і ми швидко підтвердимо замовлення. Сторінка побудована на простій HTML-структурі,
+              тому її легко інтегрувати у WordPress або замінити статичні дані на динамічні поля.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid gap-8 px-6 py-8 sm:px-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(360px,0.9fr)] lg:gap-10 lg:py-10">
+          <section aria-labelledby="cart-summary-title" class="space-y-6">
+            <div class="rounded-3xl border border-gray-200 bg-gray-50 p-6">
+              <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <h2 id="cart-summary-title" class="text-2xl font-semibold text-gray-900">Ваше замовлення</h2>
+                  <p class="mt-2 text-sm text-gray-700">
+                    Блок нижче можна напряму замінити на WooCommerce cart loop або власний WordPress шаблон.
+                  </p>
+                </div>
+                <a href="./category.html"
+                  class="inline-flex items-center text-sm font-semibold text-indigo-600 transition hover:text-indigo-500">
+                  Продовжити вибір
+                  <span aria-hidden="true" class="ml-2">→</span>
+                </a>
+              </div>
+            </div>
+
+            <div id="checkout-cart-items" class="space-y-4">
+              <article
+                class="rounded-3xl border border-gray-200 bg-white p-5 shadow-xs transition hover:border-gray-300">
+                <div class="flex flex-col gap-5 sm:flex-row">
+                  <img src="./images/123.jpg" alt="Пам’ятник №1"
+                    class="h-28 w-full rounded-2xl object-cover sm:w-32 lg:h-32" />
+                  <div class="min-w-0 flex-1">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
+                      <div>
+                        <p class="text-xs font-semibold tracking-[0.18em] text-gray-400 uppercase">Товар</p>
+                        <h3 class="mt-1 text-xl font-semibold text-gray-900">Пам’ятник №1</h3>
+                        <p class="mt-2 text-sm text-gray-700">Іноземний граніт, індивідуальне виготовлення.</p>
+                      </div>
+                      <p class="text-lg font-semibold text-gray-900">₴30 000</p>
+                    </div>
+                    <dl class="mt-4 grid gap-3 text-sm text-gray-700 sm:grid-cols-3">
+                      <div class="rounded-2xl bg-gray-50 px-4 py-3">
+                        <dt class="text-xs uppercase tracking-wide text-gray-400">Кількість</dt>
+                        <dd class="mt-1 font-medium text-gray-900">1 шт.</dd>
+                      </div>
+                      <div class="rounded-2xl bg-gray-50 px-4 py-3">
+                        <dt class="text-xs uppercase tracking-wide text-gray-400">Категорія</dt>
+                        <dd class="mt-1 font-medium text-gray-900">Одинарні</dd>
+                      </div>
+                      <div class="rounded-2xl bg-gray-50 px-4 py-3">
+                        <dt class="text-xs uppercase tracking-wide text-gray-400">Артикул</dt>
+                        <dd class="mt-1 font-medium text-gray-900">VG-001</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <section aria-labelledby="checkout-notes-title" class="rounded-3xl bg-gray-900 p-6 text-white">
+              <div class="flex items-start gap-4">
+                <div class="flex size-11 shrink-0 items-center justify-center rounded-2xl bg-white/10">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"
+                    class="size-6">
+                    <path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M21 12a9 9 0 11-18 0 9 9 0 0118 0Z"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div>
+                  <h2 id="checkout-notes-title" class="text-lg font-semibold">Що далі після заявки</h2>
+                  <p class="mt-2 text-sm leading-6 text-gray-300">
+                    Ми зв’яжемося з вами для уточнення деталей, підтвердимо вартість і узгодимо всі нюанси
+                    замовлення. Оплата на цій сторінці не проводиться.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <aside class="lg:sticky lg:top-8 lg:self-start">
+            <div class="overflow-hidden rounded-[2rem] border border-gray-200 bg-white shadow-sm">
+              <div class="border-b border-gray-200 px-6 py-6 sm:px-8">
+                <h2 class="text-2xl font-semibold text-gray-900">Контактні дані</h2>
+                <p class="mt-2 text-sm text-gray-700">Заповніть форму, щоб завершити оформлення замовлення.</p>
+              </div>
+
+              <form id="checkout-form" class="space-y-6 px-6 py-6 sm:px-8" method="post" action="#"
+                data-form-type="checkout">
+                <div class="space-y-2">
+                  <label for="checkout-name" class="text-sm font-semibold text-gray-900">Ім’я*</label>
+                  <input id="checkout-name" name="customer_name" type="text" autocomplete="name" required
+                    placeholder="Ваше ім’я"
+                    class="block w-full rounded-2xl border-0 bg-gray-50 px-4 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                </div>
+
+                <div class="space-y-2">
+                  <label for="checkout-phone" class="text-sm font-semibold text-gray-900">Номер телефону*</label>
+                  <input id="checkout-phone" name="customer_phone" type="tel" autocomplete="tel" required
+                    placeholder="+38 (0__) ___ __ __"
+                    class="block w-full rounded-2xl border-0 bg-gray-50 px-4 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500" />
+                </div>
+
+                <div class="space-y-2">
+                  <label for="checkout-comment" class="text-sm font-semibold text-gray-900">Коментар</label>
+                  <textarea id="checkout-comment" name="customer_comment" rows="5"
+                    placeholder="Додайте побажання до замовлення, якщо потрібно"
+                    class="block w-full rounded-2xl border-0 bg-gray-50 px-4 py-3.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-200 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-500"></textarea>
+                </div>
+
+                <fieldset class="space-y-3">
+                  <legend class="text-sm font-semibold text-gray-900">Тип оплати</legend>
+                  <label
+                    class="flex items-start gap-4 rounded-2xl border border-indigo-500 bg-indigo-50/40 px-4 py-4">
+                    <input type="radio" name="payment_method" value="cash_on_delivery" checked
+                      class="mt-1 size-4 border-gray-300 text-indigo-600 focus:ring-indigo-500" />
+                    <span class="block">
+                      <span class="block font-semibold text-gray-900">Оплата при отриманні</span>
+                      <span class="mt-1 block text-sm text-gray-700">Без онлайн-оплати на сайті, підтвердження
+                        відбувається менеджером.</span>
+                    </span>
+                  </label>
+                </fieldset>
+
+                <div class="rounded-3xl bg-gray-50 p-5">
+                  <h3 class="text-base font-semibold text-gray-900">Підсумок</h3>
+                  <dl class="mt-4 space-y-3 text-sm">
+                    <div class="flex items-center justify-between gap-4">
+                      <dt class="text-gray-700">Товари</dt>
+                      <dd class="font-medium text-gray-900">₴30 000</dd>
+                    </div>
+                    <div class="flex items-center justify-between gap-4">
+                      <dt class="text-gray-700">Доставка</dt>
+                      <dd class="font-medium text-gray-900">Уточнюється</dd>
+                    </div>
+                    <div class="border-t border-gray-200 pt-3">
+                      <div class="flex items-center justify-between gap-4">
+                        <dt class="text-base font-semibold text-gray-900">Разом</dt>
+                        <dd class="text-base font-semibold text-gray-900">₴30 000</dd>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+
+                <input type="hidden" name="order_source" value="checkout-page" />
+                <input type="hidden" name="cart_template" value="standard" />
+
+                <button type="submit"
+                  class="inline-flex w-full items-center justify-center rounded-2xl bg-indigo-500 px-5 py-4 text-base font-semibold text-white shadow-xs transition hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">
+                  Підтвердити замовлення
+                </button>
+
+                <p class="text-sm leading-6 text-gray-700">
+                  Натискаючи кнопку, ви погоджуєтесь на обробку контактних даних для зворотного зв’язку щодо
+                  замовлення.
+                </p>
+              </form>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-gray-900">
+    <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+      <div class="xl:grid xl:grid-cols-4 xl:gap-8">
+        <div class="space-y-8">
+          <img src="./images/Logo_SVG_White.svg" alt="Велич Граніту" class="h-9" />
+          <p class="text-sm/6 text-balance text-gray-400">Якщо вас цікавлять пам’ятники Львів, найкраще рішення —
+            звернутися до виробника.</p>
+          <a href="./contact.html"
+            class="inline-flex rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-gray-100">Залишити
+            заявку</a>
+        </div>
+        <div class="mt-16 xl:col-span-3 xl:mt-0">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <h3 class="text-sm/6 font-semibold text-white">Адреси</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li><span class="text-sm/6 text-gray-400">Львів, вул. Луганська, 10, Україна
+</span></li>
+                <li><span class="text-sm/6 text-gray-400">Самбір, вул. Шевченка, 13</span></li>
+                <li><span class="text-sm/6 text-gray-400">Івано-Франківськ, вул. Петлюри, 81</span></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm/6 font-semibold text-white">Каталог</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li><a href="./category.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Всі Товари</a></li>
+                <li><a href="./product.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Одинарні</a></li>
+                <li><a href="./category.html#Подвійні" class="text-sm/6 text-gray-400 hover:text-gray-300">Подвійні</a>
+                </li>
+                <li><a href="./category.html#heroes" class="text-sm/6 text-gray-400 hover:text-gray-300">Для Героїв</a>
+                </li>
+                <li><a href="./category.html#burial" class="text-sm/6 text-gray-400 hover:text-gray-300">Для поховання</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-sm/6 font-semibold text-white">Меню</h3>
+                            <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="./Виробництво.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Виробництво</a>
+                </li>
+                <li>
+                  <a href="./how_we_work.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Як ми працюємо</a>
+                </li>
+                <li>
+                  <a href="./about_us.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Про нас</a>
+                </li>
+                <li>
+                  <a href="./blog.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Блог</a>
+                </li>
+                <li>
+                  <a href="./delivery_payment.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Оплата та доставка</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+        <p class="text-sm/6 text-gray-400">&copy; 2024 Велич Граніту. Пам’ятники у Львові від виробника.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

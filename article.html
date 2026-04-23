@@ -5,46 +5,180 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Пам’ятники у Львові від виробника | Велич Граніту</title>
-  <script type="module" crossorigin src="./assets/index-zLhl_1sR.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-BEjMiNYO.css" />
 </head>
 
 <body class="bg-gray-50 text-gray-900">
   <div class="bg-gray-900">
-    <header class="relative z-50 border-b border-gray-800 bg-gray-900">
-      <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
-        <div class="flex lg:flex-1">
-          <a href="./index.html" class="-m-1.5 p-1.5">
-            <span class="sr-only">Велич Граніту</span>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt=""
-              class="h-8 w-auto" />
-          </a>
-        </div>
-        <div class="hidden lg:flex lg:items-center lg:gap-x-12">
-          <a href="./category.html" class="text-sm font-semibold text-white">Каталог</a>
-          <a href="./categories.html" class="text-sm font-semibold text-white">Наші роботи</a>
-          <a href="./about_us.html" class="text-sm font-semibold text-white">Про нас</a>
-          <a href="./delivery_payment.html" class="text-sm font-semibold text-white">Доставка та оплата</a>
-          <a href="./blog.html" class="text-sm font-semibold text-white">Блог</a>
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="./contact.html" class="text-sm font-semibold text-white">Замовити</a>
-        </div>
-      </nav>
-      <div class="border-t border-gray-800 lg:hidden">
-        <div class="mx-auto flex max-w-7xl flex-wrap gap-4 px-6 py-4">
-          <a href="./category.html" class="text-sm font-semibold text-white">Каталог</a>
-          <a href="./categories.html" class="text-sm font-semibold text-white">Наші роботи</a>
-          <a href="./about_us.html" class="text-sm font-semibold text-white">Про нас</a>
-          <a href="./delivery_payment.html" class="text-sm font-semibold text-white">Оплата</a>
-          <a href="./blog.html" class="text-sm font-semibold text-white">Блог</a>
-          <a href="./contact.html" class="text-sm font-semibold text-white">Контакти</a>
-        </div>
-      </div>
-    </header>
+      <header class="bg-gray-900 index-z-0 top-0 z-50 relative">
+        <nav aria-label="Global" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
+          <div class="flex lg:flex-1">
+            <a href="./index.html" class="-m-1.5 p-1.5">
+              <span class="sr-only">Велич Граніту</span>
+              <img src="./images/Logo_SVG_White.svg" alt=""
+                class="h-8 w-auto" />
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400">
+              <span class="sr-only">Відкрити меню</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <el-popover-group class="hidden lg:flex lg:gap-x-12">
+            <div class="relative">
+              <button popovertarget="desktop-menu-product"
+                class="flex items-center gap-x-1 text-sm/6 font-semibold text-white cursor-pointer">
+                Каталог
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                  class="size-5 flex-none text-gray-500">
+                  <path
+                    d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                    clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+              </button>
+
+              <el-popover id="desktop-menu-product" anchor="bottom" popover
+                class="w-screen max-w-md overflow-hidden rounded-3xl bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                <div class="p-4">
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-white">
+                        Одинарні
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-white">
+                        Подвійні
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-white">
+                        Для Героїв
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
+                    <div class="flex-auto">
+                      <a href="#" class="block font-semibold text-white">
+                        Під захоронення
+                        <span class="absolute inset-0"></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </el-popover>
+            </div>
+
+            <a href="./catergories.html" class="text-sm/6 font-semibold text-white">Наші Роботи</a>
+            <a href="./how_we_work.html" class="text-sm/6 font-semibold text-white">Як ми працюємо</a>
+            <a href="./about_us.html" class="text-sm/6 font-semibold text-white">Про Нас</a>
+            <a href="./delivery_payment.html" class="text-sm/6 font-semibold text-white">Доставка та Оплата</a>
+            <a href="./blog.html" class="text-sm/6 font-semibold text-white">Блог</a>
+          </el-popover-group>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="#" class="text-sm/6 font-semibold text-white">Замовити <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </nav>
+        <el-dialog>
+          <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+              <el-dialog-panel
+                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                <div class="flex items-center justify-between">
+                  <a href="./index.html" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Велич Граніту</span>
+                    <img src="./images/Logo_SVG_White.svg" alt=""
+                      class="h-8 w-auto" />
+                  </a>
+                  <button type="button" command="close" commandfor="mobile-menu"
+                    class="-m-2.5 rounded-md p-2.5 text-gray-400">
+                    <span class="sr-only">Закрити меню</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                      aria-hidden="true" class="size-6">
+                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+                <div class="mt-6 flow-root">
+                  <div class="-my-6 divide-y divide-white/10">
+                    <div class="space-y-2 py-6">
+                      <div class="-mx-3">
+                        <button type="button" command="--toggle" commandfor="products"
+                          class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-white/5">
+                          Каталог
+                          <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true"
+                            class="size-5 flex-none in-aria-expanded:rotate-180">
+                            <path
+                              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                              clip-rule="evenodd" fill-rule="evenodd" />
+                          </svg>
+                        </button>
+                        <el-disclosure id="products" hidden class="mt-2 block space-y-2">
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Одинарні</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Подвійні</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Для
+                            Героїв</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Під
+                            захоронення</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Індивідуальні</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Мармурові</a>
+                          <a href="#"
+                            class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-white/5">Гранітні</a>
+                        </el-disclosure>
+                      </div>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Наші
+                        Роботи</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Доставка
+                        та Оплата</a>
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Про
+                        Нас</a>
+                    </div>
+                    <div class="py-6">
+                      <a href="#"
+                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Замовити
+                        пам’ятник</a>
+                    </div>
+                  </div>
+                </div>
+              </el-dialog-panel>
+            </div>
+          </dialog>
+        </el-dialog>
+      </header>
   </div>
 
   <main>
+    <div class="bg-white">
+      <nav aria-label="Breadcrumb" class="mx-auto max-w-5xl px-6 pt-8 lg:px-8">
+        <ol role="list" class="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+          <li><a href="./index.html" class="font-medium text-gray-700 transition hover:text-gray-900">Головна</a></li>
+          <li class="text-gray-400">/</li>
+          <li><a href="./blog.html" class="font-medium text-gray-700 transition hover:text-gray-900">Блог</a></li>
+          <li class="text-gray-400">/</li>
+          <li class="font-medium text-gray-500" aria-current="page">Стаття</li>
+        </ol>
+      </nav>
+    </div>
     <section class="bg-white">
       <div class="mx-auto max-w-5xl px-6 py-12 lg:px-8">
         <p class="text-sm font-semibold uppercase tracking-wide text-indigo-600">Стаття</p>
@@ -246,15 +380,15 @@
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-4 xl:gap-8">
         <div class="space-y-8">
-          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Велич Граніту"
+          <img src="./images/Logo_SVG_White.svg" alt="Велич Граніту"
             class="h-9" />
           <p class="text-sm text-gray-400">Якщо вас цікавлять пам’ятники Львів, найкраще рішення — звернутися до виробника.</p>
           <a href="./contact.html"
             class="inline-flex rounded-md bg-white px-4 py-2.5 text-sm font-semibold text-gray-900 transition hover:bg-gray-100">
-            Submit a Request
+            Залишити заявку
           </a>
           <div class="flex gap-x-6">
-            <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Facebook</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                 <path
@@ -262,7 +396,7 @@
                   clip-rule="evenodd" fill-rule="evenodd" />
               </svg>
             </a>
-            <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">Instagram</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                 <path
@@ -270,7 +404,7 @@
                   clip-rule="evenodd" fill-rule="evenodd" />
               </svg>
             </a>
-            <a href="./contact.html" class="text-gray-400 hover:text-gray-300">
+            <a href="#" class="text-gray-400 hover:text-gray-300">
               <span class="sr-only">X</span>
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="size-6">
                 <path
@@ -284,29 +418,43 @@
             <div>
               <h3 class="text-sm font-semibold text-white">Адреси</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li><span class="text-sm text-gray-400">Lviv, 10 Luhanska St. Ukraine</span></li>
-                <li><span class="text-sm text-gray-400">Sambir, 13 Shevchenka St.</span></li>
-                <li><span class="text-sm text-gray-400">Ivano-Frankivsk, 81 Petliury St.</span></li>
+                <li><span class="text-sm text-gray-400">Львів, вул. Луганська, 10, Україна
+</span></li>
+                <li><span class="text-sm text-gray-400">Самбір, вул. Шевченка, 13</span></li>
+                <li><span class="text-sm text-gray-400">Івано-Франківськ, вул. Петлюри, 81</span></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold text-white">Каталог</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li><a href="./category.html" class="text-sm text-gray-400 hover:text-gray-300">All Products</a></li>
-                <li><a href="./product.html" class="text-sm text-gray-400 hover:text-gray-300">Single</a></li>
-                <li><a href="./category.html#double" class="text-sm text-gray-400 hover:text-gray-300">Double</a></li>
-                <li><a href="./category.html#heroes" class="text-sm text-gray-400 hover:text-gray-300">For Heroes</a></li>
-                <li><a href="./category.html#burial" class="text-sm text-gray-400 hover:text-gray-300">For Burial</a></li>
+                <li><a href="./category.html" class="text-sm text-gray-400 hover:text-gray-300">Всі Товари</a></li>
+                <li><a href="./product.html" class="text-sm text-gray-400 hover:text-gray-300">Одинарні</a></li>
+                <li><a href="./category.html#Подвійні" class="text-sm text-gray-400 hover:text-gray-300">Подвійні</a></li>
+                <li><a href="./category.html#heroes" class="text-sm text-gray-400 hover:text-gray-300">Для Героїв</a></li>
+                <li><a href="./category.html#burial" class="text-sm text-gray-400 hover:text-gray-300">Для поховання</a></li>
               </ul>
             </div>
             <div>
               <h3 class="text-sm font-semibold text-white">Меню</h3>
-              <ul role="list" class="mt-6 space-y-4">
-                <li><a href="./production.html" class="text-sm text-gray-400 hover:text-gray-300">Production</a></li>
-                <li><a href="./about_us.html" class="text-sm text-gray-400 hover:text-gray-300">About Us</a></li>
-                <li><a href="./blog.html" class="text-sm text-gray-400 hover:text-gray-300">Blog</a></li>
-                <li><a href="./delivery_payment.html" class="text-sm text-gray-400 hover:text-gray-300">Payment & Delivery</a></li>
-                <li><a href="./contact.html" class="text-sm text-gray-400 hover:text-gray-300">Contacts</a></li>
+                            <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="./Виробництво.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Виробництво</a>
+                </li>
+                <li>
+                  <a href="./how_we_work.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Як ми працюємо</a>
+                </li>
+                <li>
+                  <a href="./about_us.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Про нас</a>
+                </li>
+                <li>
+                  <a href="./blog.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Блог</a>
+                </li>
+                <li>
+                  <a href="./delivery_payment.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Оплата та доставка</a>
+                </li>
+                <li>
+                  <a href="./contact.html" class="text-sm/6 text-gray-400 hover:text-gray-300">Контакти</a>
+                </li>
               </ul>
             </div>
           </div>
